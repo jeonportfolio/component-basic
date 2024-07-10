@@ -5,6 +5,7 @@ import { Dimensions } from 'react-native';
 import { Spacer } from '../Spacer';
 import { HeaderIcon } from './HeaderButton';
 import { HeaderTitle } from './HeaderTitle';
+import { HeaderGroup } from './HeaderGroup';
 
 
 const {width} = Dimensions.get('window');
@@ -27,7 +28,7 @@ export class Header extends React.Component {
                                         <View   style={{flex:1, flexDirection: "row", justifyContent: "space-between"}}>
                                             {this.props.children}
                                         </View>  
-                                    <Spacer horizontal={ture} space= {12}/>
+                                    <Spacer horizontal={true} space= {12}/>
 
                             </View>
                         </View>
@@ -39,3 +40,4 @@ export class Header extends React.Component {
 
 Header.Title = HeaderTitle;
 Header.Icon = HeaderIcon;
+Header.Group = HeaderGroup;

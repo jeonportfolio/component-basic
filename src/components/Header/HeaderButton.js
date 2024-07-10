@@ -6,7 +6,7 @@ export class HeaderIcon extends React.Component {
     render(){
         return(
             <Button onPress={this.props.onPress}>
-                    <Icon iconName= {this.props.iconName} iconSize= {28}/> 
+                    <Icon name= {this.props.iconName} size= {28} color='black'/> 
             </Button>
         )
     }

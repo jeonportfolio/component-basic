@@ -23,4 +23,5 @@
 -> `npm install --save react-native-safe-area-context`(안전영역)
 -> 헤더관리의 컴파운드 패턴 
 -> 헤더부분의 유지보수를 편하게 하기위해 컴포넌트를 세분화 하여 Header 폴더에 저장 
+-> Header의 icon, Header의 정렬, Header의 제목 
 

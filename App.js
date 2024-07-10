@@ -13,18 +13,20 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HeaderWithoutCompound } from './src/components/HeaderWithoutCompound';
 import { Header } from './src/components/Header/Header';
 
+
+
 export default function App() {
   return (
     <SafeAreaProvider>
 
-              <View style={styles.container}>
-                  
-                    <Header>
-                        <Header.Title title= 'Header'></Header.Title>
-                    </Header>
-              </View>
-      </SafeAreaProvider>    
-          /*{ <Typography color="red" fontSize={20}>
+    <View style={styles.container}>
+        
+          <Header>
+              <Header.Group>
+                  <Header.Title title= "HEADER"></Header.Title>
+              </Header.Group>
+          </Header>
+          <Typography color="red" fontSize={20}>
               이것은 텍스트 입니다.
           </Typography>
 
@@ -94,7 +96,8 @@ export default function App() {
           <TabIcon iconName='car'></TabIcon>
           <TabIcon iconName='car' visibleBadge></TabIcon>
           
-    }*/
+    </View>
+    </SafeAreaProvider>   
   );
 }
 
