@@ -8,11 +8,23 @@ import { Badge } from './src/components/Badge';
 import { Button } from './src/components/Button';
 import { Divider } from './src/components/Divider';
 import { Spacer } from './src/components/Spacer';
+import { TabIcon } from './src/components/TabIcon';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { HeaderWithoutCompound } from './src/components/HeaderWithoutCompound';
+import { Header } from './src/components/Header/Header';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-          <Typography color="red" fontSize={20}>
+    <SafeAreaProvider>
+
+              <View style={styles.container}>
+                  
+                    <Header>
+                        <Header.Title title= 'Header'></Header.Title>
+                    </Header>
+              </View>
+      </SafeAreaProvider>    
+          /*{ <Typography color="red" fontSize={20}>
               이것은 텍스트 입니다.
           </Typography>
 
@@ -79,8 +91,10 @@ export default function App() {
               </Button>
           </View>
 
+          <TabIcon iconName='car'></TabIcon>
+          <TabIcon iconName='car' visibleBadge></TabIcon>
           
-    </View>
+    }*/
   );
 }
 
