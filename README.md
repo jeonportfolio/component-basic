@@ -27,5 +27,6 @@
 
 ## REACT HOOK 컴포넌트 
 -> 모든부분을 다시 HOOK 컴포넌트화 하여 재사용 용이하게 하기 
+-> memoization usecallback hook을 사용해 변수의 값대로 변화하는 값 표출하기 
 
 

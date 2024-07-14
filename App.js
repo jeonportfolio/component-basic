@@ -12,10 +12,19 @@ import { TabIcon } from './src/components/TabIcon';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { HeaderWithoutCompound } from './src/components/HeaderWithoutCompound';
 import { Header } from './src/components/Header/Header';
+import { HookTestComponent } from './src/components/HookTestComponent';
+import { useCallback, useState } from 'react';
 
 
 
 export default function App() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(0);
+
+  const dosum = useCallback(() => {
+      return(a+b)
+  },[a,b])
+
   return (
     <SafeAreaProvider>
 
@@ -30,6 +39,19 @@ export default function App() {
               이것은 텍스트 입니다.
           </Typography>
 
+          <View style={{flex:1}}>
+                <HookTestComponent a={a} b={b}></HookTestComponent>
+                
+                <Typography>현재 callback으로 계산 된 값: {dosum()}</Typography>
+                
+                <Button 
+                    onPress={() => {
+                      console.log('press'),
+                      setA(a+1)
+                 }}>
+                    <Typography>A 더하기</Typography>
+                </Button>
+          </View>
 
             <Spacer space={20}/>
             <Divider/>
