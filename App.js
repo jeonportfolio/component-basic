@@ -26,7 +26,7 @@ export default function App() {
                   <Header.Title title= "HEADER"></Header.Title>
               </Header.Group>
           </Header>
-          <Typography color="red" fontSize={20}>
+          <Typography color="red" fontSize={25}>
               이것은 텍스트 입니다.
           </Typography>
 
@@ -36,8 +36,8 @@ export default function App() {
 
           <LocalImage 
               localAsset = {require('./assets/favicon.png')} 
-              width = {50}
-              height = {50}
+              width = {60}
+              height = {60}
         />
 
 
@@ -48,7 +48,7 @@ export default function App() {
         <RemoteImage
             url={'https://cafeptthumb-phinf.pstatic.net/20160320_271/toeicking990_1458482400384vdCfb_JPEG/740_IMG_20160320_224304.jpg?type=w800'}
             width={200}
-            height={100}
+            height={150}
         />
 
         <Spacer space={20}/>
